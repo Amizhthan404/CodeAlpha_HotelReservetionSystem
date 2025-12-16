@@ -1,121 +1,86 @@
-HOTEL RESERVATION SYSTEM (Java + JDBC)
+# 🏨 Hotel Reservation System (Java)
 
-A console-based Hotel Reservation System developed using Java and JDBC, integrated with a MySQL database.
-This project focuses on understanding backend fundamentals, database connectivity, and executing SQL operations through Java.
+This is my second hands-on Java project, developed during my internship at **CodeAlpha**.
 
-📌 Project Overview
+It is a simple and beginner-friendly **console-based application** that allows users to manage hotel room reservations using a **MySQL database connected through JDBC**.
 
-The Hotel Reservation System allows users to manage hotel bookings through a simple menu-driven interface.
-It supports creating, viewing, updating, and deleting reservation records stored in a MySQL database.
+This project represents the next step in my Java development journey, where I learned how to connect Java applications with databases and perform real-time operations using SQL.
 
-The project was built as part of my internship learning journey, with emphasis on core Java, JDBC, and SQL logic.
+---
 
-⚙️ Features
+## 🚀 Features
 
-Reserve a hotel room
+- Reserve a hotel room  
+- Store reservation details in a MySQL database  
+- View all reservations  
+- Get room number using reservation ID and guest name  
+- Update reservation details  
+- Delete reservations  
+- Clean and structured Java code  
+- Menu-driven console interface  
 
-View all reservations
+---
 
-Retrieve room number using reservation details
+## 🧠 What I Learned
 
-Update existing reservation information
+While building this project independently, I practiced:
 
-Delete reservations
+- Connecting Java applications to MySQL using **JDBC**
+- Writing and executing **SQL queries** from Java
+- Performing **CRUD operations** (Create, Read, Update, Delete)
+- Working with `Statement` and `ResultSet`
+- Structuring logic using Java methods
+- Handling user input using `Scanner`
+- Understanding basic backend application flow
 
-Menu-driven console interface
+---
 
-Real-time interaction with MySQL database
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
+- Java  
+- JDBC (Java Database Connectivity)  
+- MySQL  
+- SQL  
+- Console-based UI  
 
-->Java
+---
 
-->JDBC (Java Database Connectivity)
+## 🗄️ Database Setup
 
-->MySQL
-
-->SQL
-
-->Console-based UI
-
-🗄️ Database Setup
-
-Run the following SQL commands in MySQL Workbench to set up the database:
-
+```sql
 CREATE DATABASE hotel_db;
 USE hotel_db;
 
 CREATE TABLE reservations (
-    reservation_id INT AUTO_INCREMENT PRIMARY KEY,        
-    
+    reservation_id INT AUTO_INCREMENT PRIMARY KEY,
     guest_name VARCHAR(50),
-    
     room_number INT,
-    
     contact_number VARCHAR(15),
-    
     reservation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
+---
 
-▶️ How to Run the Project
+## ▶️ How to Run
 
 Install MySQL Server and MySQL Workbench
 
-Create the database and table using the SQL commands above
+Create the database and table using the SQL above
 
-Download and add MySQL Connector/J to your Java project
+Add MySQL Connector/J to your Java project
 
-Update database credentials in the Java file if required:
+Update database credentials in the Java file if required
 
-->>jdbc:mysql://localhost:3306/hotel_db
+Run HotelReservationSystem.java
+
+Use the menu options to manage reservations
+
+📌 Note
+
+This project is built for learning and practice purposes, focusing on understanding Java–database connectivity and backend fundamentals.
 
 
-Compile and run HotelReservationSystem.java
+## 👤 Author
 
-Use the menu to perform reservation operations
-
-🧠 Learning Outcomes
-
-Through this project, I gained hands-on experience in:
-
-JDBC architecture and database connectivity
-
-Executing SQL queries using Java
-
-Handling Statement and ResultSet objects
-
-Implementing CRUD operations
-
-Designing a structured, menu-driven console application
-
-📚 Learning Resources
-
-This project was developed by learning and practicing concepts from the following resources:
-
-Java JDBC tutorial videos
-
-SQL database practice
-
-Hands-on experimentation with Java and MySQL
-
-⚠️ Note
-
-Update database username and password before running the application
-
-This project is intended for learning and practice purposes
-
-📈 Future Enhancements
-
-Use PreparedStatement for better security
-
-Add room availability tracking
-
-Improve input validation
-
-Extend to a GUI or web-based interface
-
-👤 Author
-
-Amizhthan A
+## Amizhthan A
 Early-Stage Software Engineer | Java Developer | Tech Explorer
-www.linkedin.com/in/amizhthan-a-0083a1319
